@@ -47,8 +47,45 @@ body
 .ItemConteudo
 {
     grid-area: conteudo;
-    height: 2fr;
-    background-color: black;
+    
+    background-color: var(--WhiteColor);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-top: 10px solid var(--RedColor);
+    border-right: black;
+    border-spacing: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+
+    padding: 10px 100px 10px 100px;
+}
+
+.ItemConteudo .Item 
+{
+    width: 100%;
+    height: 60px;
+}
+
+.ItemConteudo .Item:nth-child(5), .ItemConteudo .Item:nth-child(6), .ItemConteudo .Item:nth-child(7) , .ItemConteudo .Item input[type="submit"], .ItemConteudo .Item input[type="reset"]
+{
+    width: 50%;
+}
+
+.Btn-group-linha
+{
+    display: flex;
+}
+
+.ItemConteudo .Item label
+{
+    width: 100%;
+}
+
+.ItemConteudo .Item input
+{
+    width: 100%;
 }
 
 .ItemMenu
@@ -81,7 +118,7 @@ body
     text-align: center;
 
     border-bottom: 1px solid #FE0000;
-    background-color: #eaedf03f;
+    background-color: #eaedf070;
     width: 100%;
     color: #000;
     padding: 10px 0 10px 0;
