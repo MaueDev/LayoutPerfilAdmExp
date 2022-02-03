@@ -54,14 +54,50 @@ body
     border-right: black;
     border-spacing: 10px;
 
+}
+
+.flex-wrap-end
+{
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
     align-items: center;
-
     padding: 10px 100px 10px 100px;
 }
 
+.Dashbord
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Dashbord hr
+{
+    width: 100%;
+    height: 0;
+}
+
+.Grafico
+{
+    width: 40%;
+    height: 40%;
+}
+
+.TableDashbord
+{
+    width: 60%;
+}
+.TableDashbord tbody
+{
+    overflow: scroll;
+    height: 200px;
+    display: block;
+}
+
+.SectionParametro
+{
+    height: 60%;
+}
 .ItemConteudo .Item 
 {
     width: 100%;

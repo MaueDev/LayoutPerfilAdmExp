@@ -5,7 +5,7 @@
     <div class="ItemLogo">
         <img src="./img/PerfilFt.png" alt="Foto de Perfil">
     </div>
-    <div class="ItemConteudo">
+    <div class="ItemConteudo flex-wrap-end" style="display: none;">
         <div class="Item">
             <h2>Perfil </h2>
         </div>
@@ -38,6 +38,79 @@
             <input type="submit" value="Atualizar" >
         </div>
     </div>
+    <div class="ItemConteudo Dashbord">
+        <div class="Grafico" >
+            <canvas id="myChart" height="150px" width="300px"></canvas>
+        </div>
+        <div class="TableDashbord">
+            <table>
+                <thead>
+                    <tr>
+                        Noticia
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class=" "><strong class="">Systema</strong>Parametro da empresa TORNEADORA J.K. DE FRUTAL LTDA, foi preenchido as 2022-02-02 09:02:01</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class=" "><strong class="">Systema</strong>Parametro da empresa TORNEADORA J.K. DE FRUTAL LTDA, foi preenchido as 2022-02-02 09:02:01</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class=" "><strong class="">Systema</strong>Parametro da empresa TORNEADORA J.K. DE FRUTAL LTDA, foi preenchido as 2022-02-02 09:02:01</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class=" "><strong class="">Systema</strong>Parametro da empresa TORNEADORA J.K. DE FRUTAL LTDA, foi preenchido as 2022-02-02 09:02:01</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class=" "><strong class="">Systema</strong>Parametro da empresa TORNEADORA J.K. DE FRUTAL LTDA, foi preenchido as 2022-02-02 09:02:01</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class=" "><strong class="">Systema</strong>Parametro da empresa TORNEADORA J.K. DE FRUTAL LTDA, foi preenchido as 2022-02-02 09:02:01</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class=" "><strong class="">Systema</strong>Parametro da empresa TORNEADORA J.K. DE FRUTAL LTDA, foi preenchido as 2022-02-02 09:02:01</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class=" "><strong class="">Systema</strong>Parametro da empresa TORNEADORA J.K. DE FRUTAL LTDA, foi preenchido as 2022-02-02 09:02:01</p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+        <div class="SectionParametro">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Seçao de pesquisa </th>
+                        <th> Botão  </th>
+                        <th> Botão  </th>
+                        <th> Botão  </th>
+                        <th> Botão  </th>
+                        <th> Botão  </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
     <div class="ItemMenu">
         <ul>
             <li><a href="">DASHBORD</a></li>
@@ -48,3 +121,32 @@
     
             
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.0/chart.min.js"></script>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+    
+    var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ["opa","bao","eai"],
+        datasets: [{
+            data: [3,4,5],
+            backgroundColor: [
+                '#dc3545',
+                '#0d6efd',
+                '#198754',
+            ],
+            borderColor: [
+                '#dc3545',
+                '#0d6efd',
+                '#198754',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+    }
+});
+
+</script>
